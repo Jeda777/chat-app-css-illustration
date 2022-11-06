@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+//Text
+$Pale-Violet: #d89eff;
+$Moderate-Violet: #9241c8;
+$Desaturated-Dark-Violet: #6e5d7e;
+$Grayish-Blue: #c6cacd;
+$Very-Dark-Desaturated-Violet: #3e2753;
+$Dark-Grayish-Violet: #a39daa;
+//Gradient
+$Light-Magenta: #e942ff;
+$Light-Violet: #8838ff;
+//Secondary
+$White: #ffffff;
+$Light-Grayish-Violet: #f5f3f7;
+$Very-Dark-Desaturated-Violet: #3e2753;
+$Very-Light-Magenta: #e570ff;
+
+* {
+  font-family: 'Rubik', sans-serif;
+}
