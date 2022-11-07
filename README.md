@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution]()
+- [Solution](https://www.frontendmentor.io/solutions/chat-app-css-illustration-scss-tailwindcss-Awgbd6eh8W)
 - [Live site](https://spectacular-liger-ab0c74.netlify.app/)
 
 ## Built with
