@@ -31,5 +31,61 @@
     &:nth-child(5) {
       @apply mb-2;
     }
+    &:nth-child(1) {
+      animation: chat 5s linear;
+    }
+  }
+  @keyframes chat {
+    0% {
+      margin-top: 363px;
+    }
+    6% {
+      margin-top: 321px;
+    }
+    12% {
+      margin-top: 321px;
+    }
+    18% {
+      margin-top: 279px;
+    }
+    25% {
+      margin-top: 279px;
+    }
+    31% {
+      margin-top: 223px;
+    }
+    37% {
+      margin-top: 223px;
+    }
+    43% {
+      margin-top: 181px;
+    }
+    50% {
+      margin-top: 181px;
+    }
+    56% {
+      margin-top: 150px;
+    }
+    62% {
+      margin-top: 150px;
+    }
+    68% {
+      margin-top: 89px;
+    }
+    75% {
+      margin-top: 89px;
+    }
+    81% {
+      margin-top: 49px;
+    }
+    87% {
+      margin-top: 49px;
+    }
+    93% {
+      margin-top: 0;
+    }
+    100% {
+      margin-top: 0;
+    }
   }
 }
