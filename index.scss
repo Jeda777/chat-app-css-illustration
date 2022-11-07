@@ -27,15 +27,16 @@ body {
   @apply relative min-h-screen overflow-x-hidden bg-[#fafafa];
 
   .content {
-    @apply relative flex h-full min-h-screen w-full flex-col items-center gap-[72px] overflow-hidden py-16 px-10;
+    @apply relative flex h-full min-h-screen w-full flex-col items-center justify-center gap-[72px] overflow-hidden py-16 px-10
+    xl:flex-row xl:gap-32;
     &::after {
       content: '';
       @apply absolute right-0 bottom-0 -z-10 h-[1000px] w-full translate-x-1/2 translate-y-1/2 rounded-full
-      bg-gradient-to-b from-LightViolet to-LightMagenta opacity-5;
+      bg-gradient-to-b from-LightViolet to-LightMagenta opacity-5 xl:right-[8%] xl:h-[160%] xl:w-1/2;
     }
 
     .text {
-      @apply flex flex-col items-center gap-8 text-center;
+      @apply flex flex-col items-center gap-8 text-center xl:items-start xl:text-left;
       h1 {
         @apply text-4xl font-bold text-VeryDarkDesaturatedViolet;
       }
@@ -48,6 +49,6 @@ body {
   &::before {
     content: '';
     @apply absolute top-0 left-0 h-[1000px] w-full -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-b
-    from-LightMagenta to-LightViolet;
+    from-LightMagenta to-LightViolet xl:left-[8%] xl:h-[160%] xl:w-1/2;
   }
 }
