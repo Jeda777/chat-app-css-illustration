@@ -1,0 +1,39 @@
+.phone-upper {
+  @apply flex h-16 w-full items-end gap-2 rounded-lg bg-gradient-to-r from-LightViolet to-LightMagenta px-3.5 py-3;
+
+  .svg-container {
+    @apply h-6 w-1.5;
+
+    img {
+      @apply h-full w-full object-cover;
+    }
+  }
+
+  .upper-person {
+    @apply flex h-6 w-full gap-2;
+
+    img {
+      @apply h-6 w-6 rounded-full border border-solid border-white;
+    }
+
+    .person-info {
+      @apply flex w-full flex-col justify-between;
+
+      p {
+        @apply text-[8px] leading-[10px] text-LightGrayishViolet opacity-70;
+      }
+
+      .person-name {
+        @apply text-[10px] font-medium leading-3 opacity-100;
+      }
+    }
+  }
+
+  .upper-menu {
+    @apply flex h-6 w-0.5 flex-col justify-center gap-[2px] opacity-70;
+
+    div {
+      @apply h-0.5 w-0.5 bg-white;
+    }
+  }
+}

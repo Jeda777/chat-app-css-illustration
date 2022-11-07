@@ -1,0 +1,35 @@
+.phone-chat {
+  @apply flex w-full flex-col gap-2 px-2 py-3;
+
+  .chat-message {
+    @apply max-w-[70%] rounded-xl p-1.5 text-[8px] leading-snug;
+
+    &.chat-message--person {
+      @apply rounded-bl bg-PaleViolet bg-opacity-20 text-ModerateViolet;
+    }
+    &.chat-message--img {
+      @apply mt-2 flex gap-2 self-end p-0;
+      img {
+        @apply h-10 w-10 rounded-lg;
+      }
+    }
+    &.chat-message--my {
+      @apply self-end rounded-br bg-white text-DesaturatedDarkViolet;
+    }
+    &.chat-message--price {
+      @apply flex items-center gap-2 rounded-bl bg-gradient-to-r from-LightMagenta to-LightViolet p-[10px] text-white;
+      .message-checkbox {
+        @apply h-3 w-3 shrink-0 rounded-full border border-solid border-white opacity-80;
+      }
+      .message-time {
+        @apply w-full opacity-90;
+      }
+      .message-price {
+        @apply text-[10px] font-bold leading-none;
+      }
+    }
+    &:nth-child(5) {
+      @apply mb-2;
+    }
+  }
+}

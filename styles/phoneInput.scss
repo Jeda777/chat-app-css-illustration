@@ -1,0 +1,18 @@
+.phone-input-container {
+  @apply absolute left-1/2 bottom-0 w-full -translate-x-1/2 bg-LightGrayishViolet p-[10px] pt-0;
+
+  .phone-input {
+    @apply flex w-full items-center justify-between rounded-3xl bg-white p-1.5 text-xs;
+
+    p {
+      @apply ml-3 text-GrayishBlue;
+    }
+    .input-btn {
+      @apply aspect-square h-6 rounded-full bg-VeryDarkDesaturatedViolet;
+
+      img {
+        @apply w-full rotate-180;
+      }
+    }
+  }
+}

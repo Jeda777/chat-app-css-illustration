@@ -1,0 +1,15 @@
+@import './phoneChat.scss';
+@import './phoneUpper.scss';
+@import './phoneInput.scss';
+
+.phone {
+  @apply h-[505px] w-[247px] rounded-[32px] bg-white p-2.5 shadow-2xl;
+
+  .phone-content {
+    @apply relative h-full w-full overflow-hidden rounded-3xl bg-LightGrayishViolet;
+    &::before {
+      content: '';
+      @apply absolute top-0 left-1/2 h-[20px] w-32 -translate-x-1/2 rounded-b-xl bg-white;
+    }
+  }
+}

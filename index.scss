@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+@import './styles/phone.scss';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -31,113 +32,6 @@ body {
       content: '';
       @apply absolute right-0 bottom-0 -z-10 h-[1000px] w-full translate-x-1/2 translate-y-1/2 rounded-full
       bg-gradient-to-b from-LightViolet to-LightMagenta opacity-5;
-    }
-
-    .phone {
-      @apply h-[505px] w-[247px] rounded-[32px] bg-white p-2.5 shadow-2xl;
-
-      .phone-content {
-        @apply relative h-full w-full overflow-hidden rounded-3xl bg-LightGrayishViolet;
-        &::before {
-          content: '';
-          @apply absolute top-0 left-1/2 h-[20px] w-32 -translate-x-1/2 rounded-b-xl bg-white;
-        }
-
-        .phone-upper {
-          @apply flex h-16 w-full items-end gap-2 rounded-lg bg-gradient-to-r from-LightViolet to-LightMagenta px-3.5 py-3;
-
-          .svg-container {
-            @apply h-6 w-1.5;
-
-            img {
-              @apply h-full w-full object-cover;
-            }
-          }
-
-          .upper-person {
-            @apply flex h-6 w-full gap-2;
-
-            img {
-              @apply h-6 w-6 rounded-full border border-solid border-white;
-            }
-
-            .person-info {
-              @apply flex w-full flex-col justify-between;
-
-              p {
-                @apply text-[8px] leading-[10px] text-LightGrayishViolet opacity-70;
-              }
-
-              .person-name {
-                @apply text-[10px] font-medium leading-3 opacity-100;
-              }
-            }
-          }
-
-          .upper-menu {
-            @apply flex h-6 w-0.5 flex-col justify-center gap-[2px] opacity-70;
-
-            div {
-              @apply h-0.5 w-0.5 bg-white;
-            }
-          }
-        }
-
-        .phone-chat {
-          @apply flex w-full flex-col gap-2 px-2 py-3;
-
-          .chat-message {
-            @apply max-w-[70%] rounded-xl p-1.5 text-[8px] leading-snug;
-
-            &.chat-message--person {
-              @apply rounded-bl bg-PaleViolet bg-opacity-20 text-ModerateViolet;
-            }
-            &.chat-message--img {
-              @apply mt-2 flex gap-2 self-end p-0;
-              img {
-                @apply h-10 w-10 rounded-lg;
-              }
-            }
-            &.chat-message--my {
-              @apply self-end rounded-br bg-white text-DesaturatedDarkViolet;
-            }
-            &.chat-message--price {
-              @apply flex items-center gap-2 rounded-bl bg-gradient-to-r from-LightMagenta to-LightViolet p-[10px] text-white;
-              .message-checkbox {
-                @apply h-3 w-3 shrink-0 rounded-full border border-solid border-white opacity-80;
-              }
-              .message-time {
-                @apply w-full opacity-90;
-              }
-              .message-price {
-                @apply text-[10px] font-bold leading-none;
-              }
-            }
-            &:nth-child(5) {
-              @apply mb-2;
-            }
-          }
-        }
-
-        .phone-input-container {
-          @apply absolute left-1/2 bottom-0 w-full -translate-x-1/2 bg-LightGrayishViolet p-[10px] pt-0;
-
-          .phone-input {
-            @apply flex w-full items-center justify-between rounded-3xl bg-white p-1.5 text-xs;
-
-            p {
-              @apply ml-3 text-GrayishBlue;
-            }
-            .input-btn {
-              @apply aspect-square h-6 rounded-full bg-VeryDarkDesaturatedViolet;
-
-              img {
-                @apply w-full rotate-180;
-              }
-            }
-          }
-        }
-      }
     }
 
     .text {
